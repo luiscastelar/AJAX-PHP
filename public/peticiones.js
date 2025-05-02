@@ -26,13 +26,18 @@ const RESULTADO = document.querySelector('#resultado');
 //-------------------------------------------------
 PETICION.addEventListener('click', () => {
   const url = 'http://localhost:8000/servicio.php';
-  const parametros = 'nombre=Luis&apellido=Mejia';
+  //const parametros = 'nombre=Luis&apellido=Mejia';
+  const parametros = {
+    "nombre":"Luis",
+    "apellido": "Mejia"
+  };  
+  // 'Content-Type': 'application/x-www-form-urlencoded',
   fetch(url, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Type': 'application/json'
     },
-    body: parametros
+    body: JSON.stringify( parametros )
   })
   .then(response => response.text())
   .then(data => {
