@@ -8,3 +8,19 @@ services:
     ports:
       - 8000:80
 
+  db-skills:
+    image: mariadb
+    # Soporta amd64 y arm64 y armhf ( armv7 o arm32)
+    environment:
+      MYSQL_ROOT_PASSWORD: ${pass_root}
+      MYSQL_DATABASE: ${db_name}
+      MYSQL_USER: ${db_user}
+      MYSQL_PASSWORD: ${db_pass}
+    volumes:
+      - ./db:/var/lib/mysql
+    # Para pruebas sólo
+    #ports:
+    #  - 3306:3306
+
+    # Para revisión y pruebas:
+    # docker exec -it CONTENEDOR mariadb -u nonmbreDEusuarioDeDB -ppasssDeDB

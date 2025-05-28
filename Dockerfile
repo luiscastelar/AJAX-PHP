@@ -1,5 +1,6 @@
 # Use an official PHP runtime
 FROM php:8.3-apache
+   # Soporta amd64 y arm64 pero no armhf (armv7 o arm32)
 
 # Actualizamos los paquetes e instalamos las extensiones necesarias de PHP
 RUN apt-get update && docker-php-ext-install mysqli pdo pdo_mysql

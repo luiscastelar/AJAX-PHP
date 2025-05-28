@@ -1,4 +1,4 @@
-# AJAX-PHP
+# AJAX-PHP: Prueba de concepto
 
 ## Previo
 1. Crear la imagen con Dockerfile (no hacer nada)
@@ -25,3 +25,6 @@ Por su puesto, también en:
 + `POSTMAN`
 + VSC (extension `REST Client`)
 + IntelliJ IDEA (extension [`Restful Api Tool`](https://plugins.jetbrains.com/plugin/22446-restful-api-tool/versions/stable))
+
+# CRUD completo
+...

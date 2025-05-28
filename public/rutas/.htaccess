@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /folder/
+RewriteRule ^servicio\\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /rutas/servicio.php [L]
+# https://www.freecodecamp.org/news/how-to-build-a-routing-system-in-php/
