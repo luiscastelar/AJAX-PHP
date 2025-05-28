@@ -1,4 +1,8 @@
 # AJAX-PHP
+Ramas:
++ main: un ajax-php rápido de envío y recepción con json.
++ crud: [en desarrollo] una aproximación a un CRUD y aproximación de rutas
++ node: [en desarrollo] una aproximación ajax-node con express.
 
 ## Previo
 1. Crear la imagen con Dockerfile (no hacer nada)
