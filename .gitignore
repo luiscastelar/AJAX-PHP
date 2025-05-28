@@ -1,0 +1,5 @@
+.env
+.env.privado
+.idea/
+db/
+**/node_modules/
